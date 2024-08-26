@@ -1,3 +1,4 @@
+# Instance
 variable "image_id" {
     type = string
     default = "ami-041e2ea9402c46c32"
@@ -32,6 +33,8 @@ variable "instance_names" {
 #  name="allow_ssh"
 #  description = "Allow ssh"
 
+
+#SG 
 variable "sg_name" {
     default = "allow_ssh"  
 }
@@ -54,3 +57,12 @@ variable "allowed_cidr" {
     default = ["0.0.0.0/0"]
 }
 
+
+#R53 
+variable "zone_id" {
+  default = "Z0678312CKW4YMU2Z6SJ"
+}
+
+variable "domain_name" {
+  default = "narendra.shop"  
+}

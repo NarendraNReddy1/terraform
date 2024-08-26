@@ -1,3 +1,4 @@
-output "instance_info"{
-   value=aws_instance.db 
-}
+# output "instance_info"{
+#    value=aws_instance.expense
+# }
+
