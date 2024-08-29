@@ -32,3 +32,12 @@ variable "common_tags" {
   }      
 }
 
+
+#R53 
+variable "zone_id" {
+  default = "Z0678312CKW4YMU2Z6SJ"
+}
+
+variable "domain_name" {
+  default = "narendra.shop"  
+}
