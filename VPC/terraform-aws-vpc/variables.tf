@@ -117,21 +117,25 @@ variable "database_route_table_tags" {
 #PEERING RELATED VARIABLES
 
 #### Peering ####
-#PEERING
-variable "is_peering_required" {
-  type=bool 
-  default = false
-  
-}
+  #PEERING
+  variable "is_peering_required" {
+    type=bool 
+    default = false
+    
+  }
 
-variable "acceptor_vpc_id" {
-  type=string 
-  default = ""
-}
+  variable "acceptor_vpc_id" {
+    type=string 
+    default = ""
+  }
 
 
-variable "vpc_peering_tags" {
-  type=map 
+  variable "vpc_peering_tags" {
+    type=map 
+    default = {}
+  }
+
+variable "database_subnet_group_tags" {
   default = {}
 }
 
