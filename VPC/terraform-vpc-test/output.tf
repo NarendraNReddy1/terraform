@@ -28,3 +28,7 @@ output "db_subnet_group_id"{
 output "database_subnet_group_name" {
   value = module.vpc.database_subnet_group_name
 }
+
+output "igw_id"{
+  value=module.vpc.igw_id
+}
